@@ -9,7 +9,7 @@ import {
 export class CreateReservationDto {
   @IsString()
   @IsNotEmpty()
-  id: number;
+  id: string;
 
   @IsString()
   @IsNotEmpty()
@@ -31,7 +31,7 @@ export class CreateReservationDto {
   @IsNotEmpty()
   room_type: string;
 
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   price: number;
 
