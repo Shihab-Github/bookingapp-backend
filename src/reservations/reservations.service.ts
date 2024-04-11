@@ -29,8 +29,8 @@ export class ReservationsService {
     return this.reservationRepository.findAll({});
   }
 
-  findOne(id: number) {
-    return this.reservationRepository.findOne({ _id: id.toString() });
+  findOne(id: string) {
+    return this.reservationRepository.findOne({ _id: id });
   }
 
   update(id: number, updateReservationDto: UpdateReservationDto) {
