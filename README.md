@@ -20,6 +20,6 @@ $ npm run start:dev
 - Mongodb has been used as the choice of database
 
 ## Documentation
-In the data layer, this project adheres to the repository pattern. I have created an abstract repository that will be inherited by all current and future entities to share common functionalities. There's an abstract schema as well to hold the common fields. As this project has only one entity which is the reservation so this might look like an overkill but this will greatly help the project to scale if more entities are being added in the future. 
+In the data layer, this project adheres to the repository pattern. I have created an abstract repository that will be inherited by all current and future entities to share common functionalities. There's an abstract schema as well to hold the common fields. As this project has only one entity which is the reservation entity, so this might look like a bit too much but this will greatly help the project to scale if more entities are added in the future. 
 
 
