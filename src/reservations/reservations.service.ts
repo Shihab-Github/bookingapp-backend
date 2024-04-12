@@ -33,12 +33,16 @@ export class ReservationsService {
     return this.reservationRepository.findOne({ _id: id });
   }
 
-  update(id: number, updateReservationDto: UpdateReservationDto) {
+  update(id: string, updateReservationDto: UpdateReservationDto) {
     return this.reservationRepository.findOneAndUpdate(
-      { _id: id.toString() },
+      { _id: id },
       {
         $set: updateReservationDto,
       },
     );
+  }
+
+  remove(id: string) {
+    return this.reservationRepository.findOneAndDelete({ _id: id });
   }
 }
